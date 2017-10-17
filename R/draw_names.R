@@ -13,7 +13,11 @@
 #' }
 
 draw_names <- function(names){
+  
+  
   assert_that(is.character(class(names)))
+  
+  data("dataprenoms",package = "myfirstpackage")
   dataprenoms %>% filter(name %in% names) %>%
     group_by(year,name) %>%
     summarize(count=n()) %>%
