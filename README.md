@@ -1,2 +1,2 @@
 # Package_DM
-Package training 
+My first package on R 
